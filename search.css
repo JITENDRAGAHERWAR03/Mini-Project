@@ -1,0 +1,116 @@
+html {
+    font-size: 60%;
+}
+
+.search-box {
+    position: absolute;
+    left: 45%;
+    margin: 5% auto;
+}
+
+.search-box .search {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    background: #fff;
+    box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, .4);
+    opacity: 0.8;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.search::before {
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #dd4b39;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.search::after {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid #dd4b39;
+    width: 20px;
+    height: 20px;
+    content: "";
+    transition: .5s;
+}
+
+.search-box input {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    z-index: 5;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 .2rem .5rem 0 #333;
+    opacity: 0;
+    direction: rtl;
+    transition: 1s;
+}
+
+.search-box input:hover {
+    cursor: pointer;
+}
+
+.search-box input:focus {
+    width: 200px;
+    opacity: 1;
+    cursor: text;
+}
+
+.search-box input:focus~.search {
+    z-index: 6;
+    background: #dd4b39;
+    box-shadow: 0 .2rem .3rem 0 #333;
+}
+
+.search-box input:focus~.search::before {
+    background: #fff;
+    width: 30px;
+    top: 23px;
+    left: 10px;
+}
+
+.search-box input:focus~.search::after {
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    top: 23px;
+    left: 10px;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+    border: none;
+}
+
+.search-box input::placeholder {
+    opacity: 0.5;
+}
+
+@media(max-width:768px) {
+    .search-box {
+        left: 30%;
+        margin: 50% auto;
+    }
+}
