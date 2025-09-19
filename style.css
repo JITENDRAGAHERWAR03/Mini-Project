@@ -1,50 +1,194 @@
- *{ 
+*{
     margin: 0%;
     padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html,body{
     width: 100%;
     height: 100%;
+   
 }
+
 #main{
-    height: 100%;
     width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 13%;
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-around;
+   background-color: white;
+}
+
+#logo{
+    height: 70%;
+   
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+.texts{
+    color: rgb(3, 3, 72);
+    font-weight: bolder;
+}
+
+.texts:hover{
+   color: rgb(4, 99, 131);
+}
+
+#contactdetails{
+    color: rgb(57, 57, 229);
+    font-weight: lighter;
+}
+
+.icon{
+  
+   padding: 10px;
+   border-radius: 50%;
+}
+
+.icon:hover{
+    background-color: lightblue;
+}
+#login{
+    display: flex;
+    padding: 10px;
+    border-radius: 55%;
+}
+
+#login:hover{
+    background-color: lightblue;
+}
+
+#try{
+   background-color: green;
+   padding: 10px 20px;
+   color: white;
+}
+
+#try:hover{
+    background-color: rgb(5, 66, 5);
+   
+ }
+#Fakeheader{
+    width: 100%;
+    height: 13%;
     
 }
-.shape{
-    margin-left: 10px; margin-top: 10px;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    display: flex;
+
+#page1{
+    width: 100%;
+    height: 87%;
+    background-color: white;
+    
+}
+
+#strip{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(2, 2, 49);
+    color: white;
     align-items: center;
     justify-content: center;
+    display: flex;
+}
+
+#strip p{
+    margin-right: 20px;
+
+} 
+#content {
+display: flex;
+width: 100%;
+height: 70%;
+}
+#box1{
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+   text-align: center;
+    
+}
+
+#box1 h1{
+    margin: 75px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(7, 7, 103);
+    font-size: 50px;
+}
+
+#box1 p{
+    margin: 20px;
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgba(2, 2, 18, 0.834);
+}
+
+#btns{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+#btn1{
+    color: white;
+    width: 23%;
+    padding: 10px 20px ;
+    background-color: rgb(85, 164, 190);
+    margin: 10px;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+#btn1:hover{
+    background-color: rgb(5, 57, 75);
+}
+#btn2{
+    color: lightblue;
+    width: 23%;
+    padding: 10px 20px ;
+    border: 1px solid rgb(85, 164, 190);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#btn2:hover{
+    background-color:lightblue;
+    color: rgb(3, 54, 70);
+    border-color:rgb(3, 54, 70);
 
 }
-h1{
-    font-weight: normal;
+#box2{
+    width: 50%;
+    height: 100%;
+    background-color: white;
 }
-#square:hover{
-    background-color: rgb(225, 25, 25);
+#box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#circle{
-    border-radius: 50%;
+
+#heading{
+    width: 100%;
+    height: 22%;
+    text-align: center;
 }
-#circle:hover{
-    background-color: green;
+
+#heading h1{
+    font-weight: 600;
 }
-#diamond{
-    rotate: 45deg;
-    margin-top: 50px;
-    
-}
-#diamond:hover{
-    background-color: blue;
-}
-#diamond h1{
-    rotate: -45deg;
+#page2{
+    width: 100%;
+    height: 87%;
+    background-color: rgb(80, 5, 5);
 }
