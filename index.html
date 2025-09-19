@@ -1,136 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jitendra Portfolio</title>
-    <style>
-
-
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-        section{
-            padding: 20px;
-        }
-        footer{
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            position: nabsolute;
-            bottom: 0;
-            width: 100%;
-        }
-        a{
-            text-decoration: none;
-            color: #333;
-            padding: 10px;
-            margin: 10px;
-            background-color: #f4f4f4;
-            border-radius: 5px;
-        }
-        a:hover{
-            background-color: #333333;
-            color: #fff;
-        }
-        form{
-            text-align: left;
-        }
-        input[type="text"], input[type="email"], textarea{
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #333;
-
-        }
-        button{
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        table{
-            width: 100%;
-        }
-        td{
-            text-align: left;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body><center>
-    <header>
-    <h1>My name is Jitendra</h1>
-    <p>My name is Jitendra and I am a web developer</p>
-</header><hr>
-<section>
-    
-    <img src="2022-04-02-19-59-39-490.jpg" 
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
+      <div class="nav-address border">
+        <p class="addf">Deliver to</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="adds">India</p>
+        </div>
+      </div>
+      <div class="nav-search">
+        <select class="search-select">
+          <option>All</option>
+          <input placeholder="Search Amazon" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </select>
+      </div>
+      <div class="nav-signin border">
+        <p><span>Hello, sign in</span></p>
+        <p class="nav-second">Account & Lists</p>
+      </div>
+      <div class="nav-return border">
+        <p><span>Returns</span></p>
+        <p class="nav-second">& orders</p>
+      </div>
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+      </div>
 
-    height="400px" alt="Jitendra">
-</section><hr>
-<section>
-    <h2>Portfolio</h2>
-    <a href="project.html">Project 1</a><BR><br>
-    <a href="project 1.html">Project 2</a>
-</section><HR>
-<section>
-    <h2>Contact Information</h2>
-    <p>Here are a few ways to get in touch with me:</p>
-    <a href="mailto:jitendragahewar03@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/jitendra-gahewar-0b0b3b1b1">Linkedin</a>
-</section><hr>
-   <section>
-    <h2>My Skills</h2>
-    <table align="center">
-        <tr>
-            <td>
-                <ul style="text-align: left;">
-                    <li>Frontend developer</li>
-                    <li>Backend developer</li>
-                    <li>Fullstack developer</li>
-                    <li>Database developer</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
     
-   </section><hr>
-   <section>
-    <h2>Contact me</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br><br>
-        <button type="submit">Send</button>
-    </form>
-   </section><hr>
-   <footer>
-    <p>&copy; 2022 Jitendra Gahewar</p>
-   </footer>
-</center>
+    <div class="panel">
+      <div class="panel-all">
+        <i class="fa-solid fa-bars"></i>
+        All
+      
+      </div>
+      <div class="panel-ops">
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
+      </div>
+      <div class="panel-deals">
+        Shop deals in Electronics
+      </div>
+    </div>
+    
 
-<script>
-    function myFunction() {
-        alert("Hello! I am an alert box!");
-    }
-</script>
+  </header>
+  <main>
+  <div class="hero-section">
+    <div class="hero-msg">
+      <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.i</a> </p>
+    </div>
+  </div>
+  <div class="shop-section">
+    <div class="box1 box">
+     <div class="box-cotent">
+      <h2>Shop activity trackers and smartwatches</h2>
+      <div class="box-img" style="background-image: url('box1.jpg');">
+      </div>
+      <p>Shop now</p>
+     </div>
+    </div>
+    <div class="box2 box">
+      <div class="box-cotent">
+        <h2>Laptops for every need</h2>
+        <div class="box-img" style="background-image: url('box.2.jpg');">
+        </div>
+        <p>Find your laptop here</p>
+       </div>
+    </div>
+    <div class="box3 box">
+      <div class="box-cotent">
+        <h2>Player's paradise starts here</h2>
+        <div class="box-img" style="background-image: url('box3.jpg');">
+        </div>
+        <p>Shop video games</p>
+       </div>
+    </div>
+    <div class="box4 box">
+      <div class="box-cotent">
+        <h2>Deals on shoes</h2>
+        
+         <div class="box-img" style="background-image: url('box4.jpg');">
+        </div>
+        <p>See more</p>
+       </div>
+    </div>
+  </div>
+  <div class="shop-section">
+    <div class="box1 box">
+     <div class="box-cotent">
+      <h2>Upgrade your office furniture</h2>
+      <div class="box-img" style="background-image: url('box5.jpg');">
+      </div>
+      <p>Shop now</p>
+     </div>
+    </div>
+    <div class="box2 box">
+      <div class="box-cotent">
+        <h2>A whole new way to work</h2>
+        <div class="box-img" style="background-image: url('box6.jpg');">
+        </div>
+        <p>Shop personal laptop</p>
+       </div>
+    </div>
+    <div class="box3 box">
+      <div class="box-cotent">
+        <h2>Deals in PCs</h2>
+        
+        <div class="box-img" style="background-image: url('box7.jpg');">
+        </div>
+        <p>Shop now</p>
+       </div>
+    </div>
+    <div class="box4 box">
+      <div class="box-cotent">
+        <h2>Beauty steals under $25</h2>
+        
+         <div class="box-img" style="background-image: url('box8.jpg');">
+        </div>
+        <p>Shop now</p>
+       </div>
+    </div>
+  </div>
+ </main>
+  <footer>
+    <div class="foot-panel1">
+      Back to top
+    </div>
+    <div class="foot-panel2">
+      <ul>
+        <p>Get to Know Us</p>
+        <a>Careers</a>
+        <a>Blog</a>
+        <a>About Amazon</a>
+        <a>Investor Relations</a>
+        <a>Amazon Devices</a>
+        <a>Amazon Science</a>
+      </ul>
+      <ul>
+        <p>Make Money with Us
+          </p>
+        <a>Sell products on Amazon</a>
+        <a>Sell on Amazon Business</a>
+        <a>Sell apps on Amazon</a>
+        <a>Become an Affiliate</a>
+        <a>Advertise Your Products</a>
+        <a>Self-Publish with Us</a>
+        <a>Host an Amazon Hub</a>
+        <a>See More Make Money with Us</a>
+      </ul>
+      <ul>
+        <p>	
+          Amazon Payment Products</p>
+        <a>Amazon Business Card</a>
+        <a>Shop with Points</a>
+        <a>Reload Your Balance</a>
+        <a>Amazon Currency Converter</a>
+        
+      </ul>
+      <ul>
+        <p>Let Us Help You</p>
+        <a>Amazon and COVID-19</a>
+        <a>Your Account</a>
+        <a>Your Orders</a>
+        <a>Shipping Rates & Policies</a>
+        <a>Returns & Replacements</a>
+        <a>Manage Your Content and Devices</a>
+        <a>Help</a>
+      </ul>
+    </div>
+    <div class="foot-panel3">
+      <div class="logo"></div>
+      </div>
+      <div class="add-icon">
+        <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
