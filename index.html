@@ -1,36 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jitendra Portfolio</title>
+    <style>
+
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        section{
+            padding: 20px;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: nabsolute;
+            bottom: 0;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: #333333;
+            color: #fff;
+        }
+        form{
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #333;
+
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        table{
+            width: 100%;
+        }
+        td{
+            text-align: left;
+        }
+    </style>
 </head>
-
-<body>
+<body><center>
     <header>
-        <div class="logo_container"><a href="#"><img class="myntra_logo" src="myntra_logo.webp" alt="logo">
-            </a></div>
-        <nav class="nav_bar">
-            <a href="#">men</a>
-            <a href="#">women</a>
-            <a href="#">kids</a>
-            <a href="#">Home&Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">studio<sup>New</sup></a>
-        </nav>
-        <div class="search_bar">search</div>
-        <div class="action_bar">action</div>
-    </header>
-    <main>
-        <div class="banner_container">banner</div>
-        <div class="category_heading">category</div>
-        <div class="categroy_items">items</div>
+    <h1>My name is Jitendra</h1>
+    <p>My name is Jitendra and I am a web developer</p>
+</header><hr>
+<section>
+    
+    <img src="2022-04-02-19-59-39-490.jpg" 
 
-    </main>
-    <footer>footer</footer>
+    height="400px" alt="Jitendra">
+</section><hr>
+<section>
+    <h2>Portfolio</h2>
+    <a href="project.html">Project 1</a><BR><br>
+    <a href="project 1.html">Project 2</a>
+</section><HR>
+<section>
+    <h2>Contact Information</h2>
+    <p>Here are a few ways to get in touch with me:</p>
+    <a href="mailto:jitendragahewar03@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/jitendra-gahewar-0b0b3b1b1">Linkedin</a>
+</section><hr>
+   <section>
+    <h2>My Skills</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <ul style="text-align: left;">
+                    <li>Frontend developer</li>
+                    <li>Backend developer</li>
+                    <li>Fullstack developer</li>
+                    <li>Database developer</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+   </section><hr>
+   <section>
+    <h2>Contact me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+   </section><hr>
+   <footer>
+    <p>&copy; 2022 Jitendra Gahewar</p>
+   </footer>
+</center>
 
+<script>
+    function myFunction() {
+        alert("Hello! I am an alert box!");
+    }
+</script>
 </body>
-
 </html>
