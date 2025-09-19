@@ -6,91 +6,82 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Arial', sans-serif;
 }
 body {
-background-color: #0d0d0d;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 100vh;
+background-color: #2c3e50;
+overflow: hidden;
 }
-.form-container {
-background: rgba(255, 255, 255, 0.1);
-padding: 40px;
-border-radius: 15px;
-box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-width: 320px;
-text-align: center;
-}
-h2 {
-color: #fff;
-margin-bottom: 20px;
-}
-.input-box {
+.wheel {
 position: relative;
-margin: 20px 0;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+animation: spin 10s linear infinite;
 }
-.input-box input {
-width: 100%;
-padding: 12px 15px;
-background: none;
-border: none;
-outline: none;
-color: #fff;
-font-size: 18px;
-border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-transition: 0.4s;
+.slice {
+position: absolute;
+width: 50%;
+height: 50%;
+background-color: transparent;
+border-top-left-radius: 100%;
+transform-origin: 100% 100%;
 }
-.input-box input:focus {
-border-color: #00ffff;
-box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+.slice:nth-child(1) { transform: rotate(0deg); background-color: #e74c3c; }
+.slice:nth-child(2) { transform: rotate(60deg); background-color: #3498db; }
+.slice:nth-child(3) { transform: rotate(120deg); background-color: #f1c40f; }
+.slice:nth-child(4) { transform: rotate(180deg); background-color: #2ecc71; }
+.slice:nth-child(5) { transform: rotate(240deg); background-color: #9b59b6; }
+.slice:nth-child(6) { transform: rotate(300deg); background-color: #e67e22; }
+@keyframes spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
 }
-.input-box span {
+.center {
 position: absolute;
 top: 50%;
-left: 15px;
-color: rgba(255, 255, 255, 0.5);
-font-size: 16px;
-pointer-events: none;
-transition: 0.4s;
-transform: translateY(-50%);
-}
-.input-box input:focus + span,
-.input-box input:not(:placeholder-shown) + span {
-top: 5px;
-font-size: 12px;
-color: #00ffff;
-}
-.submit-btn {
-background: linear-gradient(90deg, #00ffff, #00ff80);
-border: none;
-padding: 12px 30px;
-border-radius: 25px;
-color: #000;
-font-weight: bold;
-cursor: pointer;
-transition: 0.4s;
-margin-top: 10px;
-}
-.submit-btn:hover {
-background: linear-gradient(90deg, #00ff80, #00ffff);
-box-shadow: 0 5px 15px #00ffff80;
+left: 50%;
+width: 80px;
+height: 80px;
+background-color: #2c3e50;
+border-radius: 50%;
+transform: translate(-50%, -50%);
 }
 </style>
 </head>
 <body>
-<div class="form-container">
-<h2>Login</h2>
-<div class="input-box">
-<input type="text" placeholder=" ">
-<span>Username</span>
+<div class="wheel" id="wheel">
+<div class="slice"></div>
+<div class="slice"></div>
+<div class="slice"></div>
+<div class="slice"></div>
+<div class="slice"></div>
+<div class="slice"></div>
+<div class="center"></div>
 </div>
-<div class="input-box">
-<input type="password" placeholder=" ">
-<span>Password</span>
-</div>
-<button class="submit-btn">Login</button>
-</div>
+<script>
+const wheel = document.getElementById('wheel');
+let isHovered = false;
+wheel.addEventListener('mouseenter', () => {
+wheel.style.animationPlayState = 'paused';
+isHovered = true;
+});
+wheel.addEventListener('mouseleave', () => {
+wheel.style.animationPlayState = 'running';
+isHovered = false;
+});
+window.addEventListener('mousemove', (e) => {
+if (isHovered) {
+const x = e.clientX / window.innerWidth;
+const y = e.clientY / window.innerHeight;
+const hue = Math.floor((x + y) * 180);
+wheel.style.filter = 'hue-rotate(${hue}deg)';
+}
+});
+</script>
 </body>
 </html>
