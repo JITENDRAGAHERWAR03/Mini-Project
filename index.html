@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>calculator</title>
+    <title>Cards Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calculator">
-    <input type="text" id="display" readonly>
-    <div class="button_container">
-        <button class="button" onclick="clearDisplay()">C</button>
-        <button class="button" onclick="deleteLast()">DEL</button>
-        <button class="button" onclick="append('+')">+</button>
-        <button class="button" onclick="append('-')">-</button>
-        <button class="button" onclick="append('*')">*</button>
-        <button class="button" onclick="append('/')">/</button>
-        <button class="button" onclick="append('7')">7</button>
-        <button class="button" onclick="append('8')">8</button>
-        <button class="button" onclick="append('9')">9</button>
-        <button class="button" onclick="append('4')">4</button>
-        <button class="button" onclick="append('5')">5</button>
-        <button class="button" onclick="append('6')">6</button>
-        <button class="button" onclick="append('1')">1</button>
-        <button class="button" onclick="append('2')">2</button>
-        <button class="button" onclick="append('3')">3</button>
-        <button class="button" onclick="append('0')">0</button>
-        <button class="button" onclick="append('.')">.</button>
-        <button class="button" onclick="calculate()">=</button>
+    <div id="main">
+        <div id="card1" class="card">
+            <img src="https://images.unsplash.com/photo-1542779283-429940ce8336?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div id="card2" class="card">
+            <img src="https://images.unsplash.com/photo-1643725173053-ed68676f1878?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div id="card3" class="card">
+            <img src="https://images.unsplash.com/photo-1609372332255-611485350f25?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div id="card4" class="card">
+            <img src="https://images.unsplash.com/photo-1640271443625-3276ed8f62b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
     </div>
-</div>
-<script src="calculator.js"></script>
 </body>
 </html>
