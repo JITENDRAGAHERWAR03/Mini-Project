@@ -1,0 +1,620 @@
+body {
+    background: #2c2a2a;
+}
+
+.rainbow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    width: 450px;
+    border-radius: 10rem;
+    box-shadow: 0 .1rem .3rem 0 #6d6d6d;
+}
+
+h1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 3.5rem;
+    transition: all 0.4s ease-in;
+    font-family: 'Monotype Corsiva';
+    text-transform: uppercase;
+    animation: Color 30s infinite alternate forwards;
+    -webkit-animation: Color 30s infinite alternate forwards;
+  -moz-animation: Color 30s infinite alternate forwards;
+}
+
+@keyframes Color {
+    0%{
+        color: #0c1662; 
+    }
+    5% {
+        color: #fda870;
+    }
+    10% {
+        color: #f829ff;
+    }
+    15% {
+        color: #dafa5c;
+    }
+    20% {
+        color: #11aca4;
+    }
+    25% {
+        color: #4ce64c;
+    }
+    30% {
+        color: #99ffc2;
+    }
+    35% {
+        color: #53f0d0;
+    }
+    40% {
+        color: #ff9d90;
+    }
+    45% {
+        color: #ee68e7;
+    }
+    50% {
+        color: #9999ff;
+    }
+    55% {
+        color: #c299ff;
+    }
+    60% {
+        color: #97f7fa;
+    }
+    65% {
+        color: #ff9999;
+    }
+    70% {
+        color: #ff8b48;
+    }
+    75% {
+        color: #5c89d6;
+    }
+    80% {
+        color: #5cd668;
+    }
+    85% {
+        color: #5e5cd6;
+    }
+    90% {
+        color: #d65c78;
+    }
+    95% {
+        color: #c25cd6;
+    }
+    100% {
+        color: #5cb6d6;
+    }
+}
+
+@-moz-keyframes Color {
+    0%{
+        color: #0c1662; 
+    }
+    5% {
+        color: #fda870;
+    }
+    10% {
+        color: #f829ff;
+    }
+    15% {
+        color: #dafa5c;
+    }
+    20% {
+        color: #11aca4;
+    }
+    25% {
+        color: #4ce64c;
+    }
+    30% {
+        color: #99ffc2;
+    }
+    35% {
+        color: #53f0d0;
+    }
+    40% {
+        color: #ff9d90;
+    }
+    45% {
+        color: #ee68e7;
+    }
+    50% {
+        color: #9999ff;
+    }
+    55% {
+        color: #c299ff;
+    }
+    60% {
+        color: #97f7fa;
+    }
+    65% {
+        color: #ff9999;
+    }
+    70% {
+        color: #ff8b48;
+    }
+    75% {
+        color: #5c89d6;
+    }
+    80% {
+        color: #5cd668;
+    }
+    85% {
+        color: #5e5cd6;
+    }
+    90% {
+        color: #d65c78;
+    }
+    95% {
+        color: #c25cd6;
+    }
+    100% {
+        color: #5cb6d6;
+    }
+}
+
+@-webkit-keyframes Color {
+    0%{
+        color: #0c1662; 
+    }
+    5% {
+        color: #fda870;
+    }
+    10% {
+        color: #f829ff;
+    }
+    15% {
+        color: #dafa5c;
+    }
+    20% {
+        color: #11aca4;
+    }
+    25% {
+        color: #4ce64c;
+    }
+    30% {
+        color: #99ffc2;
+    }
+    35% {
+        color: #53f0d0;
+    }
+    40% {
+        color: #ff9d90;
+    }
+    45% {
+        color: #ee68e7;
+    }
+    50% {
+        color: #9999ff;
+    }
+    55% {
+        color: #c299ff;
+    }
+    60% {
+        color: #97f7fa;
+    }
+    65% {
+        color: #ff9999;
+    }
+    70% {
+        color: #ff8b48;
+    }
+    75% {
+        color: #5c89d6;
+    }
+    80% {
+        color: #5cd668;
+    }
+    85% {
+        color: #5e5cd6;
+    }
+    90% {
+        color: #d65c78;
+    }
+    95% {
+        color: #c25cd6;
+    }
+    100% {
+        color: #5cb6d6;
+    }
+}
+
+h1:nth-of-type(1){
+    animation-delay: -19.8s;
+}
+h1:nth-of-type(2){
+    animation-delay: -19.6s;
+}
+h1:nth-of-type(3){
+    animation-delay: -19.4s;
+}
+h1:nth-of-type(4) {
+    animation-delay: -19.2s;
+}
+
+h1:nth-of-type(5) {
+    animation-delay: -19s;
+}
+
+h1:nth-of-type(6) {
+    animation-delay: -18.8s;
+}
+
+h1:nth-of-type(7) {
+    animation-delay: -18.6s;
+}
+
+h1:nth-of-type(8) {
+    animation-delay: -18.4s;
+}
+
+h1:nth-of-type(9) {
+    animation-delay: -18.2s;
+}
+
+h1:nth-of-type(10) {
+    animation-delay: -18s;
+}
+
+h1:nth-of-type(11) {
+    animation-delay: -17.8s;
+}
+
+h1:nth-of-type(12) {
+    animation-delay: -17.6s;
+}
+
+h1:nth-of-type(13) {
+    animation-delay: -17.4s;
+}
+
+h1:nth-of-type(14) {
+    animation-delay: -17.2s;
+}
+
+h1:nth-of-type(15) {
+    animation-delay: -17s;
+}
+
+h1:nth-of-type(16) {
+    animation-delay: -16.8s;
+}
+
+h1:nth-of-type(17) {
+    animation-delay: -16.6s;
+}
+
+h1:nth-of-type(18) {
+    animation-delay: -16.4s;
+}
+
+h1:nth-of-type(19) {
+    animation-delay: -16.2s;
+}
+
+h1:nth-of-type(20) {
+    animation-delay: -16s;
+}
+
+h1:nth-of-type(21) {
+    animation-delay: -15.8s;
+}
+
+h1:nth-of-type(22) {
+    animation-delay: -15.6s;
+}
+
+h1:nth-of-type(23) {
+    animation-delay: -15.4s;
+}
+
+h1:nth-of-type(24) {
+    animation-delay: -15.2s;
+}
+
+h1:nth-of-type(25) {
+    animation-delay: -15s;
+}
+
+h1:nth-of-type(26) {
+    animation-delay: -14.8s;
+}
+
+h1:nth-of-type(27) {
+    animation-delay: -14.6s;
+}
+
+h1:nth-of-type(28) {
+    animation-delay: -14.4s;
+}
+
+h1:nth-of-type(29) {
+    animation-delay: -14.2s;
+}
+
+h1:nth-of-type(30) {
+    animation-delay: -14s;
+}
+
+h1:nth-of-type(31) {
+    animation-delay: -13.8s;
+}
+
+h1:nth-of-type(32) {
+    animation-delay: -13.6s;
+}
+
+h1:nth-of-type(33) {
+    animation-delay: -13.4s;
+}
+
+h1:nth-of-type(34) {
+    animation-delay: -13.2s;
+}
+
+h1:nth-of-type(35) {
+    animation-delay: -13s;
+}
+
+h1:nth-of-type(36) {
+    animation-delay: -12.8s;
+}
+
+h1:nth-of-type(37) {
+    animation-delay: -12.6s;
+}
+
+h1:nth-of-type(38) {
+    animation-delay: -12.4s;
+}
+
+h1:nth-of-type(39) {
+    animation-delay: -12.2s;
+}
+
+h1:nth-of-type(40) {
+    animation-delay: -12s;
+}
+
+h1:nth-of-type(41) {
+    animation-delay: -11.8s;
+}
+
+h1:nth-of-type(42) {
+    animation-delay: -11.6s;
+}
+
+h1:nth-of-type(43) {
+    animation-delay: -11.4s;
+}
+
+h1:nth-of-type(44) {
+    animation-delay: -11.2s;
+}
+
+h1:nth-of-type(45) {
+    animation-delay: -11s;
+}
+
+h1:nth-of-type(46){
+    animation-delay: -10.8s;
+}
+
+h1:nth-of-type(47) {
+    animation-delay: -10.6s;
+}
+
+h1:nth-of-type(48) {
+    animation-delay: -10.4s;
+}
+
+h1:nth-of-type(49) {
+    animation-delay: -10.2s;
+}
+
+h1:nth-of-type(50) {
+    animation-delay: -10s;
+}
+
+h1:nth-of-type(51) {
+    animation-delay: -9.8s;
+}
+
+h1:nth-of-type(52) {
+    animation-delay: -9.6s;
+}
+
+h1:nth-of-type(53) {
+    animation-delay: -9.4s;
+}
+
+h1:nth-of-type(54) {
+    animation-delay: -9.2s;
+}
+
+h1:nth-of-type(55) {
+    animation-delay: -9s;
+}
+
+h1:nth-of-type(56) {
+    animation-delay: -8.8s;
+}
+
+h1:nth-of-type(57) {
+    animation-delay: -8.6s;
+}
+
+h1:nth-of-type(58) {
+    animation-delay: -8.4s;
+}
+
+h1:nth-of-type(59) {
+    animation-delay: -8.2s;
+}
+
+h1:nth-of-type(60) {
+    animation-delay: -8s;
+}
+
+h1:nth-of-type(61) {
+    animation-delay: -7.8s;
+}
+
+h1:nth-of-type(62) {
+    animation-delay: -7.6s;
+}
+
+h1:nth-of-type(63) {
+    animation-delay: -7.4s;
+}
+
+h1:nth-of-type(64) {
+    animation-delay: -7.2s;
+}
+
+h1:nth-of-type(65) {
+    animation-delay: -7s;
+}
+
+h1:nth-of-type(66) {
+    animation-delay: -6.8s;
+}
+
+h1:nth-of-type(67) {
+    animation-delay: -6.6s;
+}
+
+h1:nth-of-type(68) {
+    animation-delay: -6.4s;
+}
+
+h1:nth-of-type(69) {
+    animation-delay: -6.2s;
+}
+
+h1:nth-of-type(70) {
+    animation-delay: -6s;
+}
+
+h1:nth-of-type(71) {
+    animation-delay: -5.8s;
+}
+
+h1:nth-of-type(72) {
+    animation-delay: -5.6s;
+}
+
+h1:nth-of-type(73) {
+    animation-delay: -5.4s;
+}
+
+h1:nth-of-type(74) {
+    animation-delay: -5.2s;
+}
+
+h1:nth-of-type(75) {
+    animation-delay: -5s;
+}
+
+h1:nth-of-type(76) {
+    animation-delay: -4.8s;
+}
+
+h1:nth-of-type(77) {
+    animation-delay: -4.6s;
+}
+
+h1:nth-of-type(78) {
+    animation-delay: -4.4s;
+}
+
+h1:nth-of-type(79) {
+    animation-delay: -4.2s;
+}
+
+h1:nth-of-type(80) {
+    animation-delay: -4s;
+}
+
+h1:nth-of-type(81) {
+    animation-delay: -3.8s;
+}
+
+h1:nth-of-type(82) {
+    animation-delay: -3.6s;
+}
+
+h1:nth-of-type(83) {
+    animation-delay: -3.4s;
+}
+
+h1:nth-of-type(84) {
+    animation-delay: -3.2s;
+}
+
+h1:nth-of-type(85) {
+    animation-delay: -3s;
+}
+
+h1:nth-of-type(86) {
+    animation-delay: -2.8s;
+}
+
+h1:nth-of-type(87) {
+    animation-delay: -2.6s;
+}
+
+h1:nth-of-type(88) {
+    animation-delay: -2.4s;
+}
+
+h1:nth-of-type(89) {
+    animation-delay: -2.2s;
+}
+
+h1:nth-of-type(90) {
+    animation-delay: -2s;
+}
+
+h1:nth-of-type(91) {
+    animation-delay: -1.8s;
+}
+
+h1:nth-of-type(92) {
+    animation-delay: -1.6s;
+}
+
+h1:nth-of-type(93) {
+    animation-delay: -1.4s;
+}
+
+h1:nth-of-type(94) {
+    animation-delay: -1.2s;
+}
+
+h1:nth-of-type(95) {
+    animation-delay: -1s;
+}
+
+h1:nth-of-type(96) {
+    animation-delay: -0.8s;
+}
+
+h1:nth-of-type(97) {
+    animation-delay: -0.6s;
+}
+
+h1:nth-of-type(98) {
+    animation-delay: -0.4s;
+}
+
+h1:nth-of-type(99) {
+    animation-delay: -0.2s;
+}
+
+h1:nth-of-type(100) {
+    animation-delay: 0s;
+}
